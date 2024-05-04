@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacman Animation</title>
+    <title>Virtual Pet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="pacman-container">
-        <div class="pacman"></div>
+    <div class="container">
+        <div class="pet">
+            <img src="pet.png" alt="Virtual Pet">
+        </div>
+        <div class="controls">
+            <button onclick="feed()">Feed</button>
+            <button onclick="play()">Play</button>
+            <button onclick="clean()">Clean</button>
+        </div>
+        <div class="status">
+            <p id="mood">Mood: Happy</p>
+            <p id="health">Health: Good</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
