@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>OnlySits</title>
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Centered Image">
+    <meta property="og:title" content="OnlySits">
     <meta property="og:description" content="A simple HTML page with a centered image.">
     <meta property="og:image" content="https://i.ibb.co/2yJtZBx/Only-Sits-Logo.png">
     <meta property="og:image:type" content="image/png">
@@ -28,6 +28,10 @@
             max-height: 100%;
             display: block;
             margin: auto;
+            /* Forcing the image to be centered vertically */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     </style>
 </head>
