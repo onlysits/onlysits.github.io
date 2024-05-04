@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+    margin: 0;
+    overflow: hidden;
+}
+
+.pacman-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.pacman {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: eat-dots 0.8s infinite linear;
+}
+
+@keyframes eat-dots {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
