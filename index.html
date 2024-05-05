@@ -17,5 +17,15 @@
     <div class="image-container">
         <img class="animated-logo" src="https://svgshare.com/i/15hP.svg" alt="Only Sits Logo">
     </div>
+
+    <script>
+        // JavaScript to remove animation class after animation completes
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.animated-logo');
+            logo.addEventListener('animationend', function() {
+                logo.classList.remove('animated');
+            });
+        });
+    </script>
 </body>
 </html>

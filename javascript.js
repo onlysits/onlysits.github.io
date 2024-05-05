@@ -1,22 +1,6 @@
-let mood = "Happy";
-let health = "Good";
-
-function feed() {
-    mood = "Happy";
-    updateStatus();
-}
-
-function play() {
-    mood = "Excited";
-    updateStatus();
-}
-
-function clean() {
-    health = "Good";
-    updateStatus();
-}
-
-function updateStatus() {
-    document.getElementById("mood").innerText = "Mood: " + mood;
-    document.getElementById("health").innerText = "Health: " + health;
-}
+document.addEventListener("DOMContentLoaded", function(event) { 
+    // After the DOM is loaded, add the 'animated' class to the logo after a delay
+    setTimeout(function() {
+        document.querySelector('.animated-logo').classList.add('animated');
+    }, 1000); // Adjust the delay (in milliseconds) as needed
+});

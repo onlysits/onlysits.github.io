@@ -28,7 +28,7 @@ body, html {
 }
 
 /* Apply animation to the logo */
-.animated-logo {
+.animated-logo.animated {
     animation: pulse 2s infinite;
 }
 
