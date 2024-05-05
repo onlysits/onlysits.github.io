@@ -34,6 +34,6 @@ body, html {
 
 /* Style the image */
 .animated-logo img {
-    width: 200px; /* Adjust the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 400px; /* Adjust the width of the image */
+    height: 400px; /* Maintain aspect ratio */
 }
