@@ -14,18 +14,17 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="image-container">
-        <img class="animated-logo" src="https://svgshare.com/i/15hP.svg" alt="Only Sits Logo">
+  <div id="before_preloader">
+    <div id="recovery_mode" style="display:none;font-size:calc(1.5vh + 1vw);text-align:center;padding:0 10px">
+      <div style="position:absolute;top:10%;left:0;right:0">Just a moment...</div>
+      <div style="position:absolute;bottom:10%;left:0;right:0;">
+        <p>We'll try your destination again in 15 seconds</p>
+        <div style="width:200px;height:4px;background:rgba(0,175,240,.2);margin:0 auto;position:relative">
+          <div id="recovery_mode_progress" style="position:absolute;top:0;left:0;bottom:0;background:#00aff0;width:100%"></div>
+        </div>
+      </div>
     </div>
-
-    <script>
-        // JavaScript to remove animation class after animation completes
-        document.addEventListener('DOMContentLoaded', function() {
-            const logo = document.querySelector('.animated-logo');
-            logo.addEventListener('animationend', function() {
-                logo.classList.remove('animated');
-            });
-        });
-    </script>
+    <img src="https://svgshare.com/i/15hP.svg" alt="OnlySits Logo" class="htmlpreload">
+  </div>
 </body>
 </html>

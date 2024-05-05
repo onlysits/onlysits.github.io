@@ -1,41 +1,51 @@
-/* Reset some default browser styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Specify a fallback font */
-    background-color: white; /* Set a background color */
+:root {
+  --bg-color: #fff;
+  --text-color: #242529;
 }
 
-/* Center the image container */
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+:root.m-mode-dark {
+  --bg-color: #161618;
+  --text-color: #f6f7f8;
 }
 
-/* Define the animation keyframes */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+body {
+  background: var(--bg-color);
 }
 
-/* Apply animation to the logo */
-.animated-logo.animated {
-    animation: pulse 2s infinite;
+#before_preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  background: var(--bg-color);
+  z-index: 10000001;
 }
 
-/* Style the image */
-.animated-logo {
-    width: 400px;
-    height: 400px;
-    opacity: 0; /* Initially hide the logo */
-    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+.htmlpreload {
+  width: 35%;
+  animation: 2s linear infinite pulse_preload;
+}
+
+@keyframes pulse_preload {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes recovery_progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
