@@ -25,7 +25,7 @@ body {
 
 .htmlpreload {
   max-width: 80vw; /* Adjust the maximum width as needed */
-  width: auto; /* Allow the image to scale proportionally */
+  width: 35%; /* Allow the image to scale proportionally */
   height: auto; /* Allow the image to scale proportionally */
   animation: 2s linear infinite pulse_preload;
 }
