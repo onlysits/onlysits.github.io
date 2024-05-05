@@ -22,6 +22,22 @@
             align-items: center;
             height: 100vh;
             background-color: white;
+            overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+        }
+        .image-container {
+            position: relative;
+            animation: pulse 2s infinite; /* Animation duration and timing */
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
         img {
             max-width: 100%;
@@ -36,6 +52,8 @@
     </style>
 </head>
 <body>
-    <img src="https://i.imgur.com/ffcmutb.png" alt="Only Sits Logo">
+    <div class="image-container">
+        <img src="https://i.imgur.com/ffcmutb.png" alt="Only Sits Logo">
+    </div>
 </body>
 </html>
